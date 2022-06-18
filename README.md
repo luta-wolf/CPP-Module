@@ -14,7 +14,7 @@
 
 ### Полезные материалы
 + Документация по [С++](https://ravesli.com/uroki-cpp/).
-+ [сабджекты](https://github.com/42user/Subjects-School42-Common-core/tree/main/Cpp%20Piscine).
++ [сабджекты](https://github.com/luta-wolf/CPP-Module/tree/master/subjects).
 + [чеклисты](https://github.com/mharriso/school21-checklists).
 + видосы французов в интре.
 + курс на [степике](https://stepik.org/course/7/syllabus).
