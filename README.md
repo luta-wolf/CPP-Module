@@ -13,9 +13,9 @@
 #### Module08: Итераторы
 
 ### Полезные материалы
-+ Уроки по [С++](https://ravesli.com/uroki-cpp/), документация на руссом.
-+ [сабджекты](https://github.com/42user/Subjects-School42-Common-core/tree/main/Cpp%20Piscine)
-+ [чеклисты](https://github.com/mharriso/school21-checklists)
-+ видосы у французов неплохие в интре
-+ курс на [степике](https://stepik.org/course/7/syllabus)
-+ Объектно-ориентированное программирование [(ООП) в C++](https://www.youtube.com/playlist?list=PLQOaTSbfxUtBm7DxblJZShqBQnBAVzlXX) 116 видео
++ Документация по [С++](https://ravesli.com/uroki-cpp/).
++ [сабджекты](https://github.com/42user/Subjects-School42-Common-core/tree/main/Cpp%20Piscine).
++ [чеклисты](https://github.com/mharriso/school21-checklists).
++ видосы французов в интре.
++ курс на [степике](https://stepik.org/course/7/syllabus).
++ Объектно-ориентированное программирование [(ООП) в C++](https://www.youtube.com/playlist?list=PLQOaTSbfxUtBm7DxblJZShqBQnBAVzlXX) 116 видео.
