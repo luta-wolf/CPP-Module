@@ -14,6 +14,7 @@
 
 ### Полезные материалы
 + Документация по [С++](https://ravesli.com/uroki-cpp/).
++ ООП в [картинках](https://habr.com/ru/post/463125/).
 + [сабджекты](https://github.com/luta-wolf/CPP-Module/tree/master/subjects).
 + [чеклисты](https://github.com/mharriso/school21-checklists).
 + видосы французов в интре.
