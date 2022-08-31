@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 15:23:23 by einterdi          #+#    #+#             */
-/*   Updated: 2022/08/31 22:17:16 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/08/31 23:45:26 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ class PhoneBook
 
 		void	AddContact();
 		void	SearchContact();
-
 };
 
 #endif

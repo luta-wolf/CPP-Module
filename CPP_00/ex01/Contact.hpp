@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 15:23:04 by einterdi          #+#    #+#             */
-/*   Updated: 2022/08/31 22:09:02 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/08/31 23:45:14 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ class Contact
 		std::string &getNickname();
 		std::string &getPhoneNumber();
 		std::string &getDarkestSecret();
-
 };
-
 
 #endif
