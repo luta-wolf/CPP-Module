@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 14:48:45 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/01 19:19:35 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/01 19:46:33 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int Account::_totalAmount = 0;
 int Account::_totalNbDeposits = 0;
 int Account::_totalNbWithdrawals = 0;
 
-// Дата и время
+// Дата и время см Википедия time.h
 void	Account::_displayTimestamp()
 {
 	time_t t = time(NULL);
