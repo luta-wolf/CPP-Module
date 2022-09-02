@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/01 22:24:19 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/02 16:02:06 by einterdi         ###   ########.fr       */
+/*   Created: 2022/09/02 15:18:16 by einterdi          #+#    #+#             */
+/*   Updated: 2022/09/02 15:25:47 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#ifndef HARL_HPP
+# define HARL_HPP
 
-int main(int argc, char **argv)
+#include <iostream>
+#include <string.h>
+
+class Harl
 {
-	Harl harl;
+	private:
+		void debug( void );
+		void info( void );
+		void warning( void );
+		void error( void );
 
-	harl.complain("WARNING");
-	harl.complain("DEBUG");
-	harl.complain("INFO");
-	harl.complain("ERROR");
-	return 0;
-}
+	public:
+		Harl();
+		~Harl();
+
+		void    complain( std::string level );
+};
+
+#endif
