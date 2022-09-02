@@ -6,11 +6,19 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 23:15:47 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/02 23:58:53 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/03 01:01:13 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap()
+{
+	_name = "ScavTrap";
+	_health = 100;
+	_energy = 50;
+	_attack = 20;
+}
 
 ScavTrap::ScavTrap(std::string name)
 {
@@ -44,4 +52,12 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &copy)
 void ScavTrap::guardGate()
 {
 	std::cout << _name << " Gate keeper mod ON" << std::endl;
+}
+
+void ScavTrap::attack(const std::string& target)
+{
+	_energy--;
+	std::cout << "ScavTrap " << _name << " attacks "
+			<< target << ", causing " << _attack
+			<< " points of damage!" << std::endl;
 }

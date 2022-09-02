@@ -1,36 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*   DiamondTrap.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 23:15:47 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/02 23:58:53 by einterdi         ###   ########.fr       */
+/*   Created: 2022/09/03 00:40:12 by einterdi          #+#    #+#             */
+/*   Updated: 2022/09/03 01:04:52 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "DiamondTrap.hpp"
 
-ScavTrap::ScavTrap(std::string name)
+DiamondTrap::DiamondTrap(std::string name)
 {
 	_name = name;
-	_health = 100;
-	_energy = 50;
-	_attack = 20;
+	ClapTrap::_name = name + "_clap_name";
+	_health = FragTrap::_health;
+	_energy = ScavTrap::_energy;
+	_attack = FragTrap::_attack;
 }
 
-ScavTrap::~ScavTrap()
+DiamondTrap::~DiamondTrap()
 {
 
 }
 
-ScavTrap::ScavTrap(ScavTrap const &copy)
+DiamondTrap::DiamondTrap(DiamondTrap const &copy)
 {
 	*this = copy;
 }
 
-ScavTrap &ScavTrap::operator=(ScavTrap const &copy)
+DiamondTrap &DiamondTrap::operator=(DiamondTrap const &copy)
 {
 	if (this == &copy)
 		return *this;
@@ -41,7 +42,13 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &copy)
 	return *this;
 }
 
-void ScavTrap::guardGate()
+void DiamondTrap::attack(const std::string& target)
 {
-	std::cout << _name << " Gate keeper mod ON" << std::endl;
+	ScavTrap::attack(target);
 }
+
+void DiamondTrap::whoAmI()
+{
+	std::cout << _name << "\t" << ClapTrap::_name << std::endl;
+}
+

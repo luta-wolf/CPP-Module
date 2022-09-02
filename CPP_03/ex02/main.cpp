@@ -6,12 +6,13 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 16:54:44 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/03 00:01:02 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/03 00:37:52 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main( void )
 {
@@ -29,6 +30,15 @@ int main( void )
 	Mordor2.beRepaired(1);
 	Hobbit2.guardGate();
 	Mordor2.guardGate();
+
+	std::cout << "-------------" << std::endl;
+	FragTrap Hobbit3("Hobbit3");
+	FragTrap Mordor3("Mordor3");
+	Hobbit3.attack("Mordor3");
+	Mordor3.takeDamage(2);
+	Mordor3.beRepaired(1);
+	Hobbit3.highFivesGuys();
+	Mordor3.highFivesGuys();
 
 	return 0;
 }

@@ -1,11 +1,13 @@
-NAME	=	scavtrap
+NAME	=	fragtrap
 
 SRC		=	main.cpp \
 			ClapTrap.cpp \
-			ScavTrap.cpp
+			ScavTrap.cpp \
+			FragTrap.cpp
 
 HDR		=	ClapTrap.hpp \
-			ScavTrap.hpp
+			ScavTrap.hpp \
+			FragTrap.hpp
 
 # ---------------------------------
 OBJ 	=	$(SRC:.cpp=.o)

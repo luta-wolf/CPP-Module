@@ -1,36 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 23:15:47 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/02 23:58:53 by einterdi         ###   ########.fr       */
+/*   Created: 2022/09/03 00:04:22 by einterdi          #+#    #+#             */
+/*   Updated: 2022/09/03 00:55:10 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
-ScavTrap::ScavTrap(std::string name)
+FragTrap::FragTrap()
+{
+	_name = "FragTrap";
+	_health = 100;
+	_energy = 100;
+	_attack = 30;
+}
+
+FragTrap::FragTrap(std::string name)
 {
 	_name = name;
 	_health = 100;
-	_energy = 50;
-	_attack = 20;
+	_energy = 100;
+	_attack = 30;
 }
 
-ScavTrap::~ScavTrap()
+FragTrap::~FragTrap()
 {
 
 }
 
-ScavTrap::ScavTrap(ScavTrap const &copy)
+FragTrap::FragTrap(FragTrap const &copy)
 {
 	*this = copy;
 }
 
-ScavTrap &ScavTrap::operator=(ScavTrap const &copy)
+FragTrap &FragTrap::operator=(FragTrap const &copy)
 {
 	if (this == &copy)
 		return *this;
@@ -41,7 +49,7 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &copy)
 	return *this;
 }
 
-void ScavTrap::guardGate()
+void FragTrap::highFivesGuys()
 {
-	std::cout << _name << " Gate keeper mod ON" << std::endl;
+	std::cout << _name << " high fives guys" << std::endl;
 }
