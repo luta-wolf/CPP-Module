@@ -1,4 +1,4 @@
-NAME	=	brain
+NAME	=	human
 
 SRC		=	main.cpp \
 			Weapon.cpp \
