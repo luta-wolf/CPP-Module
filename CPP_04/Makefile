@@ -1,16 +1,15 @@
-NAME	=	scavtrap
+NAME	=	human
 
 SRC		=	main.cpp \
-			ClapTrap.cpp \
-			ScavTrap.cpp
 
-HDR		=	ClapTrap.hpp \
-			ScavTrap.hpp
+
+HDR		=
+
 
 # ---------------------------------
 OBJ 	=	$(SRC:.cpp=.o)
 
-CC		=	clang++
+CC		=	c++
 
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
 

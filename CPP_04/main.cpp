@@ -1,34 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 00:59:37 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/04 21:29:09 by einterdi         ###   ########.fr       */
+/*   Created: 2022/09/04 19:12:04 by einterdi          #+#    #+#             */
+/*   Updated: 2022/09/04 19:14:04 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANA_HPP
-# define HUMANA_HPP
-
 #include <iostream>
-#include <string.h>
-#include "Weapon.hpp"
 
-class HumanA
+int main()
 {
-	private:
-		HumanA();
-		std::string _name;
-		Weapon *_weapon;
-
-	public:
-		HumanA(std::string const &name, Weapon &weapon);
-		~HumanA();
-
-        void attack();
-};
-
-#endif
+	int *i;
+	std::cout << "Enter the number of elements in the array: " << i << std::endl;
+}

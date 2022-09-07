@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 22:24:19 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/04 16:11:56 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/04 21:24:05 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main()
 
 	Zombie *zombie2;
 	zombie2 = newZombie("Sweta");
-	// delete zombie2;
+	delete zombie2;
 
 	return 0;
 }

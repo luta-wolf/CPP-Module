@@ -22,9 +22,12 @@ END	=	"\033[00m"
 
 all:		$(NAME)
 
-$(NAME):	$(OBJ) $(HDR)
+$(NAME):	$(OBJ)
 			$(CC) $(FLAGS) $(OBJ) -I. -o $(NAME)
 			@echo $(GRN) "\tCompiled "$(NAME)" successfully!" $(END)
+
+%.o:		%.cpp $(HDR)
+			$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 			$(RM) $(OBJ)
