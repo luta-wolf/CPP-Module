@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/04 19:12:04 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/04 19:14:04 by einterdi         ###   ########.fr       */
+/*   Created: 2022/09/09 02:29:14 by einterdi          #+#    #+#             */
+/*   Updated: 2022/09/09 03:10:11 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#ifndef CAT_HPP
+# define CAT_HPP
 
-int main()
+#include "Animal.hpp"
+
+class Cat: public Animal
 {
-	int *i;
-	std::cout << "Enter the number of elements in the array: " << i << std::endl;
-}
+	public:
+		Cat();
+		~Cat();
+		Cat(Cat const &copy);
+		Cat &operator=(Cat const &copy);
+
+		virtual void makeSound() const;
+};
+
+#endif

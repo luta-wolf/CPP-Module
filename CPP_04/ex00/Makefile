@@ -1,9 +1,14 @@
-NAME	=	human
+NAME	=	animal
 
 SRC		=	main.cpp \
+			Animal.cpp \
+			Cat.cpp \
+			Dog.cpp
 
 
-HDR		=
+HDR		=	Animal.hpp \
+			Cat.hpp \
+			Dog.hpp
 
 
 # ---------------------------------
