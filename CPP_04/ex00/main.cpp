@@ -6,11 +6,10 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/04 19:12:04 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/12 00:08:06 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/12 00:12:25 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
