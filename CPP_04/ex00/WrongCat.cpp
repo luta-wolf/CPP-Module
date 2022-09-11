@@ -1,45 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/09 02:29:18 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/11 23:43:15 by einterdi         ###   ########.fr       */
+/*   Created: 2022/09/11 23:52:19 by einterdi          #+#    #+#             */
+/*   Updated: 2022/09/12 00:03:39 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "WrongCat.hpp"
 
-Cat::Cat()
+WrongCat::WrongCat()
 {
-	std::cout << "Cat: Defoult constructor called" << std::endl;
-	_type = "type Cat";
+	std::cout << "WrongCat: Defoult constructor called" << std::endl;
+	_type = "type WrongCat";
 }
 
-Cat::~Cat()
+WrongCat::~WrongCat()
 {
-	std::cout << "Cat: Denstructor called" << std::endl;
+	std::cout << "WrongCat: Denstructor called" << std::endl;
 }
 
-Cat::Cat(Cat const &copy)
+WrongCat::WrongCat(WrongCat const &copy)
 {
-	std::cout << "Cat: Copy constructor called" << std::endl;
+	std::cout << "WrongCat: Copy constructor called" << std::endl;
 	this->_type = copy._type;
 }
 
-Cat &Cat::operator=(Cat const &copy)
+WrongCat &WrongCat::operator=(WrongCat const &copy)
 {
-	std::cout << "Cat: operator= called" << std::endl;
+	std::cout << "WrongCat: operator= called" << std::endl;
 	if(this == &copy)
 		return *this;
 	this->_type = copy._type;
 	return *this;
 }
 
-void Cat::makeSound(void) const
+void WrongCat::makeSound(void) const
 {
-	std::cout << "Cat: Miaw Miaw" << std::endl;
+	std::cout << "WrongCat: Miaw Miaw" << std::endl;
 }
-

@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 02:29:08 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/09 02:58:10 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/11 23:43:28 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Dog::Dog()
 {
 	std::cout << "Dog: Defoult constructor called" << std::endl;
-	_type = "Dog";
+	_type = "type Dog";
 }
 
 Dog::~Dog()

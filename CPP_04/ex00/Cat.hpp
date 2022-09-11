@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 02:29:14 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/09 03:10:11 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/11 23:48:05 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ class Cat: public Animal
 		Cat(Cat const &copy);
 		Cat &operator=(Cat const &copy);
 
-		virtual void makeSound() const;
+		// virtual void makeSound() const;
+		void makeSound() const;
 };
 
 #endif
