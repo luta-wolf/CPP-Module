@@ -1,12 +1,15 @@
-NAME	=	animal
+NAME	=	brain
 
 SRC		=	main.cpp \
-
-
+			Animal.cpp \
+			Brain.cpp \
+			Cat.cpp \
+			Dog.cpp \
 
 HDR		=	Animal.hpp \
-
-
+			Brain.cpp \
+			Cat.hpp \
+			Dog.hpp \
 
 # ---------------------------------
 OBJ 	=	$(SRC:.cpp=.o)
