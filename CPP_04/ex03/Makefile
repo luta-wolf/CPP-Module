@@ -2,10 +2,19 @@ NAME	=	materia
 
 SRC		=	main.cpp \
 			AMateria.cpp \
+			Cure.cpp \
+			Ice.cpp \
+			Character.cpp \
+			MateriaSource.cpp
 
 
-HDR		=	AMateria.cpp \
-
+HDR		=	AMateria.hpp \
+			Cure.hpp \
+			Ice.hpp \
+			Character.hpp \
+			ICharacter.hpp \
+			IMateriaSource.hpp \
+			MateriaSource.cpp 
 
 # ---------------------------------
 OBJ 	=	$(SRC:.cpp=.o)
