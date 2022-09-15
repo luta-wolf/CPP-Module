@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 01:22:07 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/14 21:29:31 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/16 02:00:17 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ AMateria::AMateria(AMateria const &copy)
 
 AMateria &AMateria::operator=(AMateria const &copy)
 {
-	std::cout << "AMateria	: operator= called" << std::endl;
 	if(this == &copy)
 		return *this;
 
