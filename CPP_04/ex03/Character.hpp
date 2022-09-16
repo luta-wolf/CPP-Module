@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:28:42 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/15 20:44:51 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/17 01:56:30 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@
 
 #include "ICharacter.hpp"
 
-class Character
+class Character : public ICharacter
 {
 	private:
 		AMateria	*_inventory[4];
 		std::string	_name;
-		Character();
 
 	public:
+		Character();
 		Character(std::string const &name);
 		~Character();
 		Character(Character const &copy);

@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 01:22:02 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/15 20:18:39 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/17 01:58:03 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 #include <string>
 
 #include "ICharacter.hpp"
+
+class ICharacter;
 
 class AMateria
 {
@@ -32,6 +34,7 @@ class AMateria
 
 		virtual AMateria* clone() const = 0;
 		virtual void use(ICharacter& target);
+		std::string const & getType() const;
 };
 
 #endif

@@ -6,11 +6,17 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:28:39 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/16 02:13:23 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/17 02:08:58 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+
+Character::Character() : _name("noname")
+{
+	for (int i = 0; i < 4; i++)
+		_inventory[i] = NULL;
+}
 
 Character::Character(std::string const &name): _name(name)
 {
@@ -61,7 +67,7 @@ void Character::equip(AMateria* m)
 void Character::unequip(int idx)
 {
 	if (idx >= 0 &&  idx <= 3)
-		this->_inventory[idx]  == NULL;
+		this->_inventory[idx]  = NULL;
 }
 
 void Character::use(int idx, ICharacter& target)

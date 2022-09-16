@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:06:02 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/15 20:14:49 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/17 01:39:31 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #define ICHARACTER_HPP
 
 #include "AMateria.hpp"
+
+class AMateria;
 
 class ICharacter
 {
@@ -24,6 +26,5 @@ class ICharacter
 		virtual void unequip(int idx) = 0;
 		virtual void use(int idx, ICharacter& target) = 0;
 };
-
 
 #endif
