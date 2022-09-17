@@ -6,17 +6,15 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:06:09 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/17 03:08:20 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/17 03:35:28 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 
-Cure::Cure()
-{
-	_type = "cure";
-}
-Cure::Cure(std::string const &type)
+Cure::Cure() : AMateria("cure") {}
+
+Cure::Cure(std::string const &type) 
 {
 	_type = type;
 }
