@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:06:09 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/16 01:58:35 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/17 03:08:20 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Cure::Cure()
 {
-	_type = "unknown type";
+	_type = "cure";
 }
 Cure::Cure(std::string const &type)
 {

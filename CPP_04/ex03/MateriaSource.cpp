@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:28:58 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/17 02:00:36 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/17 03:05:13 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ MateriaSource::~MateriaSource()
 }
 void MateriaSource::learnMateria(AMateria* materiaSource)
 {
-	for (int i = 0; i < 4; ++i) {
+	for (int i = 0; i < 4; i++) {
 		if (!this->_store[i]) {
 			this->_store[i] = materiaSource;
 			break;
@@ -59,7 +59,7 @@ AMateria *MateriaSource::createMateria(std::string const & type)
 {
 	for (int i = 0; i < 4; i++)
 	{
-		if (_store[i] && _store[i]->getType() == type)
+		if (_store[i] != nullptr && _store[i]->getType() == type)
 			return (_store[i]->clone());
 	}
 	return (NULL);

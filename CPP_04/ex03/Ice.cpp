@@ -6,7 +6,7 @@
 /*   By: einterdi <einterdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:06:15 by einterdi          #+#    #+#             */
-/*   Updated: 2022/09/16 01:59:47 by einterdi         ###   ########.fr       */
+/*   Updated: 2022/09/17 03:04:13 by einterdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Ice::Ice()
 {
-	_type = "unknown type";
+	_type = "ice";
 }
 Ice::Ice(std::string const &type)
 {

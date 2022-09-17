@@ -14,14 +14,14 @@ HDR		=	AMateria.hpp \
 			Character.hpp \
 			ICharacter.hpp \
 			IMateriaSource.hpp \
-			MateriaSource.cpp 
+			MateriaSource.cpp
 
 # ---------------------------------
 OBJ 	=	$(SRC:.cpp=.o)
 
 CC		=	c++
 
-FLAGS	=	-Wall -Wextra -Werror -std=c++98
+FLAGS	=	#-Wall -Wextra -Werror -std=c++98
 
 RM		=	rm -rf
 
